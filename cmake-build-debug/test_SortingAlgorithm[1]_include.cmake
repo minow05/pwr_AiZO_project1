@@ -1,0 +1,5 @@
+if(EXISTS "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/test_SortingAlgorithm[1]_tests.cmake")
+  include("D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/test_SortingAlgorithm[1]_tests.cmake")
+else()
+  add_test(test_SortingAlgorithm_NOT_BUILT test_SortingAlgorithm_NOT_BUILT)
+endif()

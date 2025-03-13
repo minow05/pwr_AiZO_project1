@@ -1,0 +1,8 @@
+# ninja log v6
+10	1988	7635847243141649	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	1dd75a66edb13331
+5	11823	7635847243081573	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	6899b10bd41b6d8c
+19	1760	7635847398262891	CMakeFiles/test_SortingAlgorithm.dir/tests/test_SortingAlgorithm.cpp.obj	6819479e84b547a6
+11	3064	7635847398182803	lib/libgtest.a	61842d0f5f328023
+3064	3135	7635847428710592	lib/libgtest_main.a	d5c06201e3764cf9
+10	1629	7635848250933117	CMakeFiles/test_SortingAlgorithm.dir/tests/test_SortingAlgorithm.cpp.obj	6819479e84b547a6
+11	1641	7635848497892996	CMakeFiles/test_SortingAlgorithm.dir/tests/test_SortingAlgorithm.cpp.obj	6819479e84b547a6
