@@ -5,7 +5,19 @@
 #ifndef PWR_AIZO_PROJECT1_HEAP_H
 #define PWR_AIZO_PROJECT1_HEAP_H
 
-class Heap : public SortingAlgorithm {
+#include "SortingAlgorithm.h"
+#include <cmath>
+#include <iostream>
+
+class Heap : public SortingAlgorithm<Heap> {
+private:
+    template<typename T>
+    void heapify(T *arr, int size, int level);
+    template<typename T>
+    void buildMaxHeap(T *arr, int size);
+public:
+    template<typename T>
+    void sortImpl(T *arr, int size);
 
 };
 

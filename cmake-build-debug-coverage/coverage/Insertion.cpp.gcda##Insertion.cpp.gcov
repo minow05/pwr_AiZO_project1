@@ -1,0 +1,25 @@
+        -:    0:Source:D:/GitHub_Repos/pwr_AiZO_project1/src/Insertion.cpp
+        -:    0:Graph:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\src\Insertion.cpp.gcno
+        -:    0:Data:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\src\Insertion.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by minow on 13-Mar-25.
+        -:    3://
+        -:    4:
+        -:    5:#include "../include/Insertion.h"
+        -:    6:
+        -:    7:template<typename T>
+    #####:    8:void Insertion::sortImpl(T *arr, int size) {
+    #####:    9:    if (size <= 1) return;
+    #####:   10:    int counter = 1;
+    #####:   11:    while (counter < size){
+    #####:   12:        int key = arr[counter];
+    #####:   13:        while (key > 0 && arr[counter - 1] > key){
+    #####:   14:            std::swap(arr[counter], arr[counter - 1]);
+        -:   15:        }
+    #####:   16:        counter++;
+        -:   17:    }
+        -:   18:}
+        -:   19:
+        -:   20:template void Insertion::sortImpl(float *arr, int size);
+        -:   21:template void Insertion::sortImpl(int *arr, int size);

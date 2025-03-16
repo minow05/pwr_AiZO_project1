@@ -1,5 +1,5 @@
 D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/CMakeFiles/pwr_AiZO_project1.dir
-D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/CMakeFiles/test_SortingAlgorithm.dir
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/CMakeFiles/tests.dir
 D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/CMakeFiles/test.dir
 D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

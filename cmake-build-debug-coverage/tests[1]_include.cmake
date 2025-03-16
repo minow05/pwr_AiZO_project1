@@ -1,0 +1,5 @@
+if(EXISTS "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/tests[1]_tests.cmake")
+  include("D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/tests[1]_tests.cmake")
+else()
+  add_test(tests_NOT_BUILT tests_NOT_BUILT)
+endif()

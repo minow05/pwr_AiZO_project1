@@ -1,0 +1,161 @@
+        -:    0:Source:D:/GitHub_Repos/pwr_AiZO_project1/src/Heap.cpp
+        -:    0:Graph:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\src\Heap.cpp.gcno
+        -:    0:Data:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\src\Heap.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by minow on 13-Mar-25.
+        -:    3://
+        -:    4:#include "../include/Heap.h"
+        -:    5:#include <iostream>
+        -:    6:
+        -:    7:
+        -:    8:template<typename T>
+    #####:    9:void Heap::heapify(T *arr, int size, int level) {
+    #####:   10:    int max = level;
+    #####:   11:    int left = 2 * level + 1;
+    #####:   12:    int right = 2 * level + 2;
+        -:   13:
+    #####:   14:    if (left < size && arr[left] > arr[max]) {
+    #####:   15:        max = left;
+        -:   16:    }
+    #####:   17:    if (right < size && arr[right] > arr[max]) {
+    #####:   18:        max = right;
+        -:   19:    }
+        -:   20:
+    #####:   21:    if (max != level) {
+    #####:   22:        std::swap(arr[level], arr[max]);
+    #####:   23:        heapify(arr, size, max);
+        -:   24:    }
+    #####:   25:}
+------------------
+_ZN4Heap7heapifyIiEEvPT_ii:
+function _ZN4Heap7heapifyIiEEvPT_ii called 0 returned 0% blocks executed 0%
+    #####:    9:void Heap::heapify(T *arr, int size, int level) {
+    #####:   10:    int max = level;
+    #####:   11:    int left = 2 * level + 1;
+    #####:   12:    int right = 2 * level + 2;
+        -:   13:
+    #####:   14:    if (left < size && arr[left] > arr[max]) {
+    %%%%%:   14-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   14-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:   15:        max = left;
+    %%%%%:   15-block  0
+        -:   16:    }
+    #####:   17:    if (right < size && arr[right] > arr[max]) {
+    %%%%%:   17-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   17-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:   18:        max = right;
+    %%%%%:   18-block  0
+        -:   19:    }
+        -:   20:
+    #####:   21:    if (max != level) {
+    %%%%%:   21-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   22:        std::swap(arr[level], arr[max]);
+    %%%%%:   22-block  0
+call    0 never executed
+    #####:   23:        heapify(arr, size, max);
+call    0 never executed
+        -:   24:    }
+    #####:   25:}
+------------------
+_ZN4Heap7heapifyIfEEvPT_ii:
+function _ZN4Heap7heapifyIfEEvPT_ii called 0 returned 0% blocks executed 0%
+    #####:    9:void Heap::heapify(T *arr, int size, int level) {
+    #####:   10:    int max = level;
+    #####:   11:    int left = 2 * level + 1;
+    #####:   12:    int right = 2 * level + 2;
+        -:   13:
+    #####:   14:    if (left < size && arr[left] > arr[max]) {
+    %%%%%:   14-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   14-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:   15:        max = left;
+    %%%%%:   15-block  0
+        -:   16:    }
+    #####:   17:    if (right < size && arr[right] > arr[max]) {
+    %%%%%:   17-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   17-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:   18:        max = right;
+    %%%%%:   18-block  0
+        -:   19:    }
+        -:   20:
+    #####:   21:    if (max != level) {
+    %%%%%:   21-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   22:        std::swap(arr[level], arr[max]);
+    %%%%%:   22-block  0
+call    0 never executed
+    #####:   23:        heapify(arr, size, max);
+call    0 never executed
+        -:   24:    }
+    #####:   25:}
+------------------
+        -:   26:
+        -:   27:template<typename T>
+    #####:   28:void Heap::buildMaxHeap(T *arr, int size) {
+    #####:   29:    for (int i = size / 2 - 1; i >= 0; i--) {
+    #####:   30:        heapify(arr, size, i);
+        -:   31:    }
+    #####:   32:}
+------------------
+_ZN4Heap12buildMaxHeapIiEEvPT_i:
+function _ZN4Heap12buildMaxHeapIiEEvPT_i called 0 returned 0% blocks executed 0%
+    #####:   28:void Heap::buildMaxHeap(T *arr, int size) {
+    #####:   29:    for (int i = size / 2 - 1; i >= 0; i--) {
+    %%%%%:   29-block  0
+    %%%%%:   29-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:   30:        heapify(arr, size, i);
+    %%%%%:   30-block  0
+call    0 never executed
+        -:   31:    }
+    #####:   32:}
+------------------
+_ZN4Heap12buildMaxHeapIfEEvPT_i:
+function _ZN4Heap12buildMaxHeapIfEEvPT_i called 0 returned 0% blocks executed 0%
+    #####:   28:void Heap::buildMaxHeap(T *arr, int size) {
+    #####:   29:    for (int i = size / 2 - 1; i >= 0; i--) {
+    %%%%%:   29-block  0
+    %%%%%:   29-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:   30:        heapify(arr, size, i);
+    %%%%%:   30-block  0
+call    0 never executed
+        -:   31:    }
+    #####:   32:}
+------------------
+        -:   33:
+        -:   34:
+        -:   35:template<typename T>
+    #####:   36:void Heap::sortImpl(T *arr, int size) {
+    #####:   37:    if (size <= 1) return;
+    #####:   38:    buildMaxHeap(arr, size);  // convert the array into a max heap
+        -:   39:
+    #####:   40:    for (int i = size - 1; i > 0; i--) {
+    #####:   41:        std::swap(arr[0], arr[i]);  // move the largest element to the end
+    #####:   42:        heapify(arr, i, 0);         // re-heapify the reduced heap
+        -:   43:    }
+        -:   44:}
+        -:   45:
+        -:   46:template void Heap::sortImpl(float *arr, int size);
+        -:   47:template void Heap::sortImpl(int *arr, int size);

@@ -1,0 +1,325 @@
+        -:    0:Source:D:/GitHub_Repos/pwr_AiZO_project1/tests/test_sizeOneArray.cpp
+        -:    0:Graph:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\tests\test_sizeOneArray.cpp.gcno
+        -:    0:Data:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\tests\test_sizeOneArray.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by minow on 14-Mar-25.
+        -:    3://
+        -:    4:#include <gtest/gtest.h>
+        -:    5:#include <shldisp.h>
+        -:    6:#include "../include/Heap.h"
+        -:    7:#include "../include/Quick.h"
+        -:    8:#include "../include/Insertion.h"
+        -:    9:#include "../include/Shell.h"
+        -:   10:#include "../include/SortingAlgorithm.h"
+        -:   11:
+    #####:   12:TEST(HeapSortTest, TestSizeOneArray) {
+    #####:   13:    int arr[] = {1};
+    #####:   14:    Heap heap;
+    #####:   15:    heap.sort(arr, 1);
+    #####:   16:    EXPECT_EQ(arr[0], 1);
+    #####:   17:}
+------------------
+_ZN34HeapSortTest_TestSizeOneArray_TestC1Ev:
+function _ZN34HeapSortTest_TestSizeOneArray_TestC1Ev called 0 returned 0% blocks executed 0%
+    #####:   12:TEST(HeapSortTest, TestSizeOneArray) {
+    %%%%%:   12-block  0
+call    0 never executed
+------------------
+_ZN34HeapSortTest_TestSizeOneArray_TestD0Ev:
+function _ZN34HeapSortTest_TestSizeOneArray_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:   12:TEST(HeapSortTest, TestSizeOneArray) {
+    %%%%%:   12-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN34HeapSortTest_TestSizeOneArray_TestD1Ev:
+function _ZN34HeapSortTest_TestSizeOneArray_TestD1Ev called 0 returned 0% blocks executed 0%
+    #####:   12:TEST(HeapSortTest, TestSizeOneArray) {
+    %%%%%:   12-block  0
+call    0 never executed
+------------------
+_ZN34HeapSortTest_TestSizeOneArray_Test8TestBodyEv:
+function _ZN34HeapSortTest_TestSizeOneArray_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:   12:TEST(HeapSortTest, TestSizeOneArray) {
+    #####:   13:    int arr[] = {1};
+    #####:   14:    Heap heap;
+    #####:   15:    heap.sort(arr, 1);
+    %%%%%:   15-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   16:    EXPECT_EQ(arr[0], 1);
+    %%%%%:   16-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   16-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:   16-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   16-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:   16-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:   16-block  5
+call   16 never executed
+call   17 never executed
+    %%%%%:   16-block  6
+call   18 never executed
+    $$$$$:   16-block  7
+    $$$$$:   16-block  8
+call   19 never executed
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+call   20 never executed
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+call   21 never executed
+    #####:   17:}
+call    0 never executed
+    $$$$$:   17-block  0
+call    1 never executed
+------------------
+        -:   18:
+    #####:   19:TEST(QuickSortTest, TestSizeOneArray) {
+    #####:   20:    int arr[] = {1};
+    #####:   21:    Quick quick;
+    #####:   22:    quick.sort(arr, 1);
+    #####:   23:    EXPECT_EQ(arr[0], 1);
+    #####:   24:}
+------------------
+_ZN35QuickSortTest_TestSizeOneArray_TestC1Ev:
+function _ZN35QuickSortTest_TestSizeOneArray_TestC1Ev called 0 returned 0% blocks executed 0%
+    #####:   19:TEST(QuickSortTest, TestSizeOneArray) {
+    %%%%%:   19-block  0
+call    0 never executed
+------------------
+_ZN35QuickSortTest_TestSizeOneArray_TestD0Ev:
+function _ZN35QuickSortTest_TestSizeOneArray_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:   19:TEST(QuickSortTest, TestSizeOneArray) {
+    %%%%%:   19-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN35QuickSortTest_TestSizeOneArray_TestD1Ev:
+function _ZN35QuickSortTest_TestSizeOneArray_TestD1Ev called 0 returned 0% blocks executed 0%
+    #####:   19:TEST(QuickSortTest, TestSizeOneArray) {
+    %%%%%:   19-block  0
+call    0 never executed
+------------------
+_ZN35QuickSortTest_TestSizeOneArray_Test8TestBodyEv:
+function _ZN35QuickSortTest_TestSizeOneArray_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:   19:TEST(QuickSortTest, TestSizeOneArray) {
+    #####:   20:    int arr[] = {1};
+    #####:   21:    Quick quick;
+    #####:   22:    quick.sort(arr, 1);
+    %%%%%:   22-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   23:    EXPECT_EQ(arr[0], 1);
+    %%%%%:   23-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   23-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:   23-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   23-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:   23-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:   23-block  5
+call   16 never executed
+call   17 never executed
+    %%%%%:   23-block  6
+call   18 never executed
+    $$$$$:   23-block  7
+    $$$$$:   23-block  8
+call   19 never executed
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+call   20 never executed
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+call   21 never executed
+    #####:   24:}
+call    0 never executed
+    $$$$$:   24-block  0
+call    1 never executed
+------------------
+        -:   25:
+    #####:   26:TEST(ShellSortTest, TestSizeOneArray) {
+    #####:   27:    int arr[] = {1};
+    #####:   28:    Shell shell;
+    #####:   29:    shell.sort(arr, 1);
+    #####:   30:    EXPECT_EQ(arr[0], 1);
+    #####:   31:}
+------------------
+_ZN35ShellSortTest_TestSizeOneArray_TestC1Ev:
+function _ZN35ShellSortTest_TestSizeOneArray_TestC1Ev called 0 returned 0% blocks executed 0%
+    #####:   26:TEST(ShellSortTest, TestSizeOneArray) {
+    %%%%%:   26-block  0
+call    0 never executed
+------------------
+_ZN35ShellSortTest_TestSizeOneArray_TestD0Ev:
+function _ZN35ShellSortTest_TestSizeOneArray_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:   26:TEST(ShellSortTest, TestSizeOneArray) {
+    %%%%%:   26-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN35ShellSortTest_TestSizeOneArray_TestD1Ev:
+function _ZN35ShellSortTest_TestSizeOneArray_TestD1Ev called 0 returned 0% blocks executed 0%
+    #####:   26:TEST(ShellSortTest, TestSizeOneArray) {
+    %%%%%:   26-block  0
+call    0 never executed
+------------------
+_ZN35ShellSortTest_TestSizeOneArray_Test8TestBodyEv:
+function _ZN35ShellSortTest_TestSizeOneArray_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:   26:TEST(ShellSortTest, TestSizeOneArray) {
+    #####:   27:    int arr[] = {1};
+    #####:   28:    Shell shell;
+    #####:   29:    shell.sort(arr, 1);
+    %%%%%:   29-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   30:    EXPECT_EQ(arr[0], 1);
+    %%%%%:   30-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   30-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:   30-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   30-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:   30-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:   30-block  5
+call   16 never executed
+call   17 never executed
+    %%%%%:   30-block  6
+call   18 never executed
+    $$$$$:   30-block  7
+    $$$$$:   30-block  8
+call   19 never executed
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+call   20 never executed
+    $$$$$:   30-block 11
+    $$$$$:   30-block 12
+call   21 never executed
+    #####:   31:}
+call    0 never executed
+    $$$$$:   31-block  0
+call    1 never executed
+------------------
+    #####:   32:TEST(InsertionSortTest, TestSizeOneArray) {
+    #####:   33:    int arr[] = {1};
+    #####:   34:    Insertion insertion;
+    #####:   35:    insertion.sort(arr, 1);
+    #####:   36:    EXPECT_EQ(arr[0], 1);
+    #####:   37:}
+------------------
+_ZN39InsertionSortTest_TestSizeOneArray_TestC1Ev:
+function _ZN39InsertionSortTest_TestSizeOneArray_TestC1Ev called 0 returned 0% blocks executed 0%
+    #####:   32:TEST(InsertionSortTest, TestSizeOneArray) {
+    %%%%%:   32-block  0
+call    0 never executed
+------------------
+_ZN39InsertionSortTest_TestSizeOneArray_TestD0Ev:
+function _ZN39InsertionSortTest_TestSizeOneArray_TestD0Ev called 0 returned 0% blocks executed 0%
+    #####:   32:TEST(InsertionSortTest, TestSizeOneArray) {
+    %%%%%:   32-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN39InsertionSortTest_TestSizeOneArray_TestD1Ev:
+function _ZN39InsertionSortTest_TestSizeOneArray_TestD1Ev called 0 returned 0% blocks executed 0%
+    #####:   32:TEST(InsertionSortTest, TestSizeOneArray) {
+    %%%%%:   32-block  0
+call    0 never executed
+------------------
+_ZN39InsertionSortTest_TestSizeOneArray_Test8TestBodyEv:
+function _ZN39InsertionSortTest_TestSizeOneArray_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+    #####:   32:TEST(InsertionSortTest, TestSizeOneArray) {
+    #####:   33:    int arr[] = {1};
+    #####:   34:    Insertion insertion;
+    #####:   35:    insertion.sort(arr, 1);
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   36:    EXPECT_EQ(arr[0], 1);
+    %%%%%:   36-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   36-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:   36-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   36-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:   36-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:   36-block  5
+call   16 never executed
+call   17 never executed
+    %%%%%:   36-block  6
+call   18 never executed
+    $$$$$:   36-block  7
+    $$$$$:   36-block  8
+call   19 never executed
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+call   20 never executed
+    $$$$$:   36-block 11
+    $$$$$:   36-block 12
+call   21 never executed
+    #####:   37:}
+call    0 never executed
+    $$$$$:   37-block  0
+call    1 never executed
+------------------

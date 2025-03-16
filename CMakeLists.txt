@@ -12,7 +12,6 @@ FetchContent_MakeAvailable(googletest)
 # Add your main project executable
 add_executable(pwr_AiZO_project1
         src/main.cpp
-        src/SortingAlgorithm.cpp
         src/Shell.cpp
         src/Quick.cpp
         src/Insertion.cpp
@@ -23,12 +22,16 @@ add_executable(pwr_AiZO_project1
 enable_testing()
 
 # Create a test executable
-add_executable(test_SortingAlgorithm
-        tests/test_SortingAlgorithm.cpp
+add_executable(tests
+        tests/test_sizeOneArray.cpp
+        src/Heap.cpp
+        src/Quick.cpp
+        src/Shell.cpp
+        src/Insertion.cpp
 )
 
 # Link the test executable with Google Test
-target_link_libraries(test_SortingAlgorithm
+target_link_libraries(tests
         GTest::gtest_main
 )
 
@@ -36,4 +39,4 @@ target_link_libraries(test_SortingAlgorithm
 include(GoogleTest)
 
 # Discover and register the tests
-gtest_discover_tests(test_SortingAlgorithm)
+gtest_discover_tests(tests)

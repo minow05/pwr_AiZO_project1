@@ -5,8 +5,12 @@
 #ifndef PWR_AIZO_PROJECT1_SHELL_H
 #define PWR_AIZO_PROJECT1_SHELL_H
 
-class Shell {
+#include "SortingAlgorithm.h"
 
+class Shell : public SortingAlgorithm<Shell> {
+public:
+    template<typename T>
+    void sortImpl(T *arr, int size);
 };
 
 #endif //PWR_AIZO_PROJECT1_SHELL_H

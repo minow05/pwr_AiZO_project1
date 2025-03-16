@@ -1,0 +1,30 @@
+        -:    0:Source:D:/GitHub_Repos/pwr_AiZO_project1/src/main.cpp
+        -:    0:Graph:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\src\main.cpp.gcno
+        -:    0:Data:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\src\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by minow on 13-Mar-25.
+        -:    3://
+        -:    4:#include "../include/Quick.h"
+        -:    5:#include "../include/Shell.h"
+        -:    6:#include "../include/Insertion.h"
+        -:    7:#include "../include/Heap.h"
+        -:    8:#include <iostream>
+        -:    9:
+function main called 1 returned 100% blocks executed 100%
+        1:   10:int main(){
+        -:   11:
+        -:   12://    int arr[] = {100, 7, 8, 9, 1, 5};
+        -:   13://    float arrFloat[] = {0.13f, 12.14f, 10.8129f, 1.0f, 2, 7.69f};
+        -:   14://    int arrOne[] = {2};
+        -:   15://    Heap heap;
+        -:   16://    heap.sort(arr, 6);
+        -:   17://    heap.printArray(arr, 6);
+        -:   18://    heap.sort(arrFloat, 6);
+        -:   19://    heap.printArray(arrFloat, 6);
+        -:   20://    heap.sort(arrOne, 1);
+        -:   21://    heap.printArray(arrOne, 1);
+        1:   22:    return 0;
+        1:   22-block  0
+        -:   23:}
+        -:   24:

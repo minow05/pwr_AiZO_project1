@@ -1,0 +1,142 @@
+        -:    0:Source:D:/GitHub_Repos/pwr_AiZO_project1/include/SortingAlgorithm.h
+        -:    0:Graph:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\tests\test_sizeOneArray.cpp.gcno
+        -:    0:Data:D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug-coverage\CMakeFiles\tests.dir\tests\test_sizeOneArray.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by minow on 13-Mar-25.
+        -:    3://
+        -:    4:#include <string>
+        -:    5:#include <iostream>
+        -:    6:#include <algorithm>
+        -:    7:
+        -:    8:#ifndef PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
+        -:    9:#define PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
+        -:   10:
+        -:   11:template<class Derived>
+        -:   12:class SortingAlgorithm {
+        -:   13:public:
+        -:   14:
+        -:   15:    SortingAlgorithm() = default;
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI9InsertionED0Ev:
+function _ZN16SortingAlgorithmI9InsertionED0Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+    %%%%%:   16-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN16SortingAlgorithmI9InsertionED1Ev:
+function _ZN16SortingAlgorithmI9InsertionED1Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI9InsertionED2Ev:
+function _ZN16SortingAlgorithmI9InsertionED2Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI5ShellED0Ev:
+function _ZN16SortingAlgorithmI5ShellED0Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+    %%%%%:   16-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN16SortingAlgorithmI5ShellED1Ev:
+function _ZN16SortingAlgorithmI5ShellED1Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI5ShellED2Ev:
+function _ZN16SortingAlgorithmI5ShellED2Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI5QuickED0Ev:
+function _ZN16SortingAlgorithmI5QuickED0Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+    %%%%%:   16-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN16SortingAlgorithmI5QuickED1Ev:
+function _ZN16SortingAlgorithmI5QuickED1Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI5QuickED2Ev:
+function _ZN16SortingAlgorithmI5QuickED2Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI4HeapED0Ev:
+function _ZN16SortingAlgorithmI4HeapED0Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+    %%%%%:   16-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN16SortingAlgorithmI4HeapED1Ev:
+function _ZN16SortingAlgorithmI4HeapED1Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+_ZN16SortingAlgorithmI4HeapED2Ev:
+function _ZN16SortingAlgorithmI4HeapED2Ev called 0 returned 0% blocks executed 0%
+    #####:   16:    virtual ~SortingAlgorithm() = default;
+------------------
+        -:   17:
+        -:   18:    template<typename T>
+    #####:   19:    void sort(T *arr, int size) {
+    #####:   20:        static_cast<Derived*>(this)->sortImpl(arr, size);
+    #####:   21:    }
+------------------
+_ZN16SortingAlgorithmI9InsertionE4sortIiEEvPT_i:
+function _ZN16SortingAlgorithmI9InsertionE4sortIiEEvPT_i called 0 returned 0% blocks executed 0%
+    #####:   19:    void sort(T *arr, int size) {
+    #####:   20:        static_cast<Derived*>(this)->sortImpl(arr, size);
+    %%%%%:   20-block  0
+call    0 never executed
+    #####:   21:    }
+------------------
+_ZN16SortingAlgorithmI5ShellE4sortIiEEvPT_i:
+function _ZN16SortingAlgorithmI5ShellE4sortIiEEvPT_i called 0 returned 0% blocks executed 0%
+    #####:   19:    void sort(T *arr, int size) {
+    #####:   20:        static_cast<Derived*>(this)->sortImpl(arr, size);
+    %%%%%:   20-block  0
+call    0 never executed
+    #####:   21:    }
+------------------
+_ZN16SortingAlgorithmI5QuickE4sortIiEEvPT_i:
+function _ZN16SortingAlgorithmI5QuickE4sortIiEEvPT_i called 0 returned 0% blocks executed 0%
+    #####:   19:    void sort(T *arr, int size) {
+    #####:   20:        static_cast<Derived*>(this)->sortImpl(arr, size);
+    %%%%%:   20-block  0
+call    0 never executed
+    #####:   21:    }
+------------------
+_ZN16SortingAlgorithmI4HeapE4sortIiEEvPT_i:
+function _ZN16SortingAlgorithmI4HeapE4sortIiEEvPT_i called 0 returned 0% blocks executed 0%
+    #####:   19:    void sort(T *arr, int size) {
+    #####:   20:        static_cast<Derived*>(this)->sortImpl(arr, size);
+    %%%%%:   20-block  0
+call    0 never executed
+    #####:   21:    }
+------------------
+        -:   22:    //Curiously recurring template pattern (CRTP) because we want to inherit virtual template method
+        -:   23:
+        -:   24:    template<typename T>
+        -:   25:    void printArray(T *arr, int size){
+        -:   26:        printf("Array: \n");
+        -:   27:        for (int i = 0; i < size; ++i){
+        -:   28:            std::cout << *(arr + i) << " ";
+        -:   29:        }
+        -:   30:        std::cout << std::endl;
+        -:   31:    };
+        -:   32:
+        -:   33:protected:
+        -:   34:
+        -:   35:    template<typename T>
+        -:   36:    void sortImpl(T *arr, int size){
+        -:   37:        if (size <= 1) return;
+        -:   38:        std::sort(arr, arr + size);
+        -:   39:    };
+        -:   40:};
+        -:   41:
+        -:   42:
+        -:   43:
+        -:   44:#endif //PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
