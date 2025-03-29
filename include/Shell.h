@@ -9,6 +9,7 @@
 
 class Shell : public SortingAlgorithm<Shell> {
 public:
+    using SortingAlgorithm<Shell>::SortingAlgorithm;
     template<typename T>
     void sortImpl(T *arr, int size);
 };

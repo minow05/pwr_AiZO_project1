@@ -25,10 +25,12 @@ int Quick::partition(T *arr, int lowerBoundary, int upperBoundary) {
     int storeIndex = lowerBoundary;
     for (int i = lowerBoundary; i < upperBoundary; i++) {
         if (arr[i] < pivotValue) {
+            delayFunction();
             std::swap(arr[i], arr[storeIndex]);
             storeIndex++;
         }
     }
+
     std::swap(arr[storeIndex], arr[upperBoundary]);  // Move pivot to correct position
     return storeIndex;
 }

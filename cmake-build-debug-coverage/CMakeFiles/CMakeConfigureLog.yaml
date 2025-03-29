@@ -571,3 +571,1223 @@ events:
       Running the CXX compiler's linker: "C:/Users/minow/AppData/Local/Programs/CLion/bin/mingw/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.40
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "cmake-build-debug-coverage/_deps/sfml-src/src/SFML/System/CMakeLists.txt:69 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-0lh0zw"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-0lh0zw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-0lh0zw'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_36ab7
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_36ab7.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-0lh0zw/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_36ab7.dir/src.c.obj -o cmTC_36ab7.exe -Wl,--out-implib,libcmTC_36ab7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/sfml-src/src/SFML/Window/CMakeLists.txt:317 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include dinput.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d9pm6c"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d9pm6c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "--coverage -fmodules-ts"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "DINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d9pm6c'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_567c5
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe   --coverage -fmodules-ts  -fdiagnostics-color=always -o CMakeFiles/cmTC_567c5.dir/CheckIncludeFile.cxx.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d9pm6c/CheckIncludeFile.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe --coverage -fmodules-ts  CMakeFiles/cmTC_567c5.dir/CheckIncludeFile.cxx.obj -o cmTC_567c5.exe -Wl,--out-implib,libcmTC_567c5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/sfml-src/src/SFML/Window/CMakeLists.txt:342 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test ATOMIC_TEST"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-5btdxh"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-5btdxh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "--coverage -fmodules-ts"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "ATOMIC_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-5btdxh'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_3f4cd
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe -DATOMIC_TEST  --coverage -fmodules-ts  -fdiagnostics-color=always -o CMakeFiles/cmTC_3f4cd.dir/src.cxx.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-5btdxh/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe --coverage -fmodules-ts  CMakeFiles/cmTC_3f4cd.dir/src.cxx.obj -o cmTC_3f4cd.exe -Wl,--out-implib,libcmTC_3f4cd.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:57 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7szzbe"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7szzbe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "INCLUDE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7szzbe'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_1756b
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_1756b.dir/INCLUDE_INTTYPES_H.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7szzbe/INCLUDE_INTTYPES_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_1756b.dir/INCLUDE_INTTYPES_H.c.obj -o cmTC_1756b.exe -Wl,--out-implib,libcmTC_1756b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:58 (check_include_files)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-icc3yz"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-icc3yz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "INCLUDE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-icc3yz'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_5f9e7
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_5f9e7.dir/INCLUDE_STDINT_H.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-icc3yz/INCLUDE_STDINT_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_5f9e7.dir/INCLUDE_STDINT_H.c.obj -o cmTC_5f9e7.exe -Wl,--out-implib,libcmTC_5f9e7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:59 (check_include_files)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-riv7xv"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-riv7xv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "INCLUDE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-riv7xv'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_7f5b5
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_7f5b5.dir/INCLUDE_SYS_TYPES_H.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-riv7xv/INCLUDE_SYS_TYPES_H.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_7f5b5.dir/INCLUDE_SYS_TYPES_H.c.obj -o cmTC_7f5b5.exe -Wl,--out-implib,libcmTC_7f5b5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-p762b1"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-p762b1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-p762b1'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_746c1
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_746c1.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-p762b1/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_746c1.dir/CheckIncludeFile.c.obj -o cmTC_746c1.exe -Wl,--out-implib,libcmTC_746c1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nxeiwe"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nxeiwe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nxeiwe'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_86c9b
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_86c9b.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nxeiwe/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_86c9b.dir/CheckIncludeFile.c.obj -o cmTC_86c9b.exe -Wl,--out-implib,libcmTC_86c9b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7ac01b"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7ac01b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7ac01b'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_22ef3
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_22ef3.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-7ac01b/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_22ef3.dir/CheckIncludeFile.c.obj -o cmTC_22ef3.exe -Wl,--out-implib,libcmTC_22ef3.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:3 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int16_t"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sbinhv"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sbinhv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sbinhv'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_8130f
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_8130f.dir/INT16_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sbinhv/INT16_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_8130f.dir/INT16_SIZE.c.obj -o cmTC_8130f.exe -Wl,--out-implib,libcmTC_8130f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:4 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of uint16_t"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-2clat3"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-2clat3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_UINT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-2clat3'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_20e22
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_20e22.dir/UINT16_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-2clat3/UINT16_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_20e22.dir/UINT16_SIZE.c.obj -o cmTC_20e22.exe -Wl,--out-implib,libcmTC_20e22.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:5 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of u_int16_t"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d8w6wj"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d8w6wj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_U_INT16_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d8w6wj'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_e78bd
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_e78bd.dir/U_INT16_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d8w6wj/U_INT16_SIZE.c
+        FAILED: CMakeFiles/cmTC_e78bd.dir/U_INT16_SIZE.c.obj 
+        C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_e78bd.dir/U_INT16_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d8w6wj/U_INT16_SIZE.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d8w6wj/U_INT16_SIZE.c:27:22: error: 'u_int16_t' undeclared here (not in a function); did you mean 'uint16_t'?
+           27 | #define SIZE (sizeof(u_int16_t))
+              |                      ^~~~~~~~~
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-d8w6wj/U_INT16_SIZE.c:29:12: note: in expansion of macro 'SIZE'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:6 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int32_t"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9y3z73"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9y3z73"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9y3z73'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_7af18
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_7af18.dir/INT32_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9y3z73/INT32_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_7af18.dir/INT32_SIZE.c.obj -o cmTC_7af18.exe -Wl,--out-implib,libcmTC_7af18.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:7 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of uint32_t"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-t515uo"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-t515uo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_UINT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-t515uo'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_636ff
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_636ff.dir/UINT32_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-t515uo/UINT32_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_636ff.dir/UINT32_SIZE.c.obj -o cmTC_636ff.exe -Wl,--out-implib,libcmTC_636ff.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:8 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of u_int32_t"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sb6apk"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sb6apk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_U_INT32_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sb6apk'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_599f8
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_599f8.dir/U_INT32_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sb6apk/U_INT32_SIZE.c
+        FAILED: CMakeFiles/cmTC_599f8.dir/U_INT32_SIZE.c.obj 
+        C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_599f8.dir/U_INT32_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sb6apk/U_INT32_SIZE.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sb6apk/U_INT32_SIZE.c:27:22: error: 'u_int32_t' undeclared here (not in a function); did you mean 'uint32_t'?
+           27 | #define SIZE (sizeof(u_int32_t))
+              |                      ^~~~~~~~~
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-sb6apk/U_INT32_SIZE.c:29:12: note: in expansion of macro 'SIZE'
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:9 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int64_t"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zf79vd"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zf79vd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT64_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zf79vd'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_385e0
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_385e0.dir/INT64_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zf79vd/INT64_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_385e0.dir/INT64_SIZE.c.obj -o cmTC_385e0.exe -Wl,--out-implib,libcmTC_385e0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:10 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of short"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-8wevoa"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-8wevoa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_SHORT_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-8wevoa'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_d980c
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_d980c.dir/SHORT_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-8wevoa/SHORT_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_d980c.dir/SHORT_SIZE.c.obj -o cmTC_d980c.exe -Wl,--out-implib,libcmTC_d980c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:11 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ifzy53"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ifzy53"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INT_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ifzy53'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_17bd0
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_17bd0.dir/INT_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ifzy53/INT_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_17bd0.dir/INT_SIZE.c.obj -o cmTC_17bd0.exe -Wl,--out-implib,libcmTC_17bd0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:12 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-j0hwor"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-j0hwor"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LONG_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-j0hwor'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_b972a
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_b972a.dir/LONG_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-j0hwor/LONG_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_b972a.dir/LONG_SIZE.c.obj -o cmTC_b972a.exe -Wl,--out-implib,libcmTC_b972a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/cmake/CheckSizes.cmake:13 (check_type_size)"
+      - "cmake-build-debug-coverage/_deps/ogg-src/CMakeLists.txt:69 (include)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-jvwf6r"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-jvwf6r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/ogg-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LONG_LONG_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-jvwf6r'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_dc6dc
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_dc6dc.dir/LONG_LONG_SIZE.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-jvwf6r/LONG_LONG_SIZE.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage  CMakeFiles/cmTC_dc6dc.dir/LONG_LONG_SIZE.c.obj -o cmTC_dc6dc.exe -Wl,--out-implib,libcmTC_dc6dc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/flac-src/cmake/UseSystemExtensions.cmake:3 (check_c_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:107 (include)"
+    checks:
+      - "Performing Test HAVE_MBSTATE"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-f2l3t1"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-f2l3t1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_MBSTATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-f2l3t1'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_c009c
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_MBSTATE  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_c009c.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-f2l3t1/src.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-f2l3t1/src.c:4:9: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+            4 |     int main() { return 0; }
+              |         ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_c009c.dir/src.c.obj -o cmTC_c009c.exe -Wl,--out-implib,libcmTC_c009c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/flac-src/cmake/UseSystemExtensions.cmake:16 (check_c_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:107 (include)"
+    checks:
+      - "Performing Test DODEFINE_EXTENSIONS"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ohe8wp"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ohe8wp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "DODEFINE_EXTENSIONS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ohe8wp'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_06697
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DDODEFINE_EXTENSIONS  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_06697.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ohe8wp/src.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ohe8wp/src.c:36:9: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+           36 |     int main() { return 0; }
+              |         ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_06697.dir/src.c.obj -o cmTC_06697.exe -Wl,--out-implib,libcmTC_06697.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:111 (check_include_file)"
+    checks:
+      - "Looking for byteswap.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-r3g8uf"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-r3g8uf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_BYTESWAP_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-r3g8uf'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_8023b
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_8023b.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-r3g8uf/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_8023b.dir/CheckIncludeFile.c.obj 
+        C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_8023b.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-r3g8uf/CheckIncludeFile.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-r3g8uf/CheckIncludeFile.c:1:10: fatal error: byteswap.h: No such file or directory
+            1 | #include <byteswap.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:112 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gtpnlk"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gtpnlk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gtpnlk'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_141d6
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_141d6.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gtpnlk/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_141d6.dir/CheckIncludeFile.c.obj -o cmTC_141d6.exe -Wl,--out-implib,libcmTC_141d6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:114 (check_include_file)"
+    checks:
+      - "Looking for stdbool.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-wrt9hu"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-wrt9hu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STDBOOL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-wrt9hu'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_79b70
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_79b70.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-wrt9hu/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_79b70.dir/CheckIncludeFile.c.obj -o cmTC_79b70.exe -Wl,--out-implib,libcmTC_79b70.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:115 (check_include_file)"
+    checks:
+      - "Looking for arm_neon.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-qptblr"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-qptblr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "FLAC__HAS_NEONINTRIN"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-qptblr'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_5e6eb
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_5e6eb.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-qptblr/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_5e6eb.dir/CheckIncludeFile.c.obj 
+        C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_5e6eb.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-qptblr/CheckIncludeFile.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-qptblr/CheckIncludeFile.c:1:10: fatal error: arm_neon.h: No such file or directory
+            1 | #include <arm_neon.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:124 (check_include_file)"
+    checks:
+      - "Looking for x86intrin.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ks3xi5"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ks3xi5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "FLAC__HAS_X86INTRIN"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ks3xi5'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_67203
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_67203.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-ks3xi5/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_67203.dir/CheckIncludeFile.c.obj -o cmTC_67203.exe -Wl,--out-implib,libcmTC_67203.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:127 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gqbesj"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gqbesj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gqbesj'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_fc97b
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage -DCHECK_FUNCTION_EXISTS=fseeko -fdiagnostics-color=always -o CMakeFiles/cmTC_fc97b.dir/CheckFunctionExists.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-gqbesj/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage -DCHECK_FUNCTION_EXISTS=fseeko  CMakeFiles/cmTC_fc97b.dir/CheckFunctionExists.c.obj -o cmTC_fc97b.exe -Wl,--out-implib,libcmTC_fc97b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:129 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BSWAP16"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cjjwb5"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cjjwb5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_BSWAP16"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cjjwb5'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_f36f9
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_BSWAP16  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_f36f9.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cjjwb5/src.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cjjwb5/src.c:1:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+            1 | int main() { return __builtin_bswap16 (0) ; }
+              |     ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_f36f9.dir/src.c.obj -o cmTC_f36f9.exe -Wl,--out-implib,libcmTC_f36f9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:130 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BSWAP32"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-210195"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-210195"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_BSWAP32"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-210195'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_5b476
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_BSWAP32  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_5b476.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-210195/src.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-210195/src.c:1:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+            1 | int main() { return __builtin_bswap32 (0) ; }
+              |     ^~~~
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_5b476.dir/src.c.obj -o cmTC_5b476.exe -Wl,--out-implib,libcmTC_5b476.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:131 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_LANGINFO_CODESET"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9h1v95"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9h1v95"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LANGINFO_CODESET"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9h1v95'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_cc159
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_LANGINFO_CODESET  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_cc159.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9h1v95/src.c
+        FAILED: CMakeFiles/cmTC_cc159.dir/src.c.obj 
+        C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_LANGINFO_CODESET  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_cc159.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9h1v95/src.c
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-9h1v95/src.c:2:14: fatal error: langinfo.h: No such file or directory
+            2 |     #include <langinfo.h>
+              |              ^~~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:142 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WERROR_FLAG"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cviyzm"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cviyzm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_WERROR_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cviyzm'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_1f36c
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_WERROR_FLAG  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always   -Werror -o CMakeFiles/cmTC_1f36c.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-cviyzm/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_1f36c.dir/src.c.obj -o cmTC_1f36c.exe -Wl,--out-implib,libcmTC_1f36c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:143 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_DECL_AFTER_STMT_FLAG"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-mgziy7"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-mgziy7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_DECL_AFTER_STMT_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-mgziy7'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_632d4
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_DECL_AFTER_STMT_FLAG  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always   -Wdeclaration-after-statement -o CMakeFiles/cmTC_632d4.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-mgziy7/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_632d4.dir/src.c.obj -o cmTC_632d4.exe -Wl,--out-implib,libcmTC_632d4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:144 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_STACKREALIGN_FLAG"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-l72lrc"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-l72lrc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_STACKREALIGN_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-l72lrc'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_b4cff
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_STACKREALIGN_FLAG  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always   -mstackrealign -o CMakeFiles/cmTC_b4cff.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-l72lrc/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_b4cff.dir/src.c.obj -o cmTC_b4cff.exe -Wl,--out-implib,libcmTC_b4cff.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake-build-debug-coverage/_deps/flac-src/CMakeLists.txt:145 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WEFFCXX_FLAG"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nb0vdz"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nb0vdz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef --coverage -fmodules-ts"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_WEFFCXX_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nb0vdz'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_8c335
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe -DHAVE_WEFFCXX_FLAG  -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef --coverage -fmodules-ts  -fdiagnostics-color=always   -Weffc++ -o CMakeFiles/cmTC_8c335.dir/src.cxx.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-nb0vdz/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\g++.exe -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef --coverage -fmodules-ts  CMakeFiles/cmTC_8c335.dir/src.cxx.obj -o cmTC_8c335.exe -Wl,--out-implib,libcmTC_8c335.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/src/libFLAC/CMakeLists.txt:3 (check_include_file)"
+    checks:
+      - "Looking for cpuid.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tsghti"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tsghti"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_CPUID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tsghti'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_2962c
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_2962c.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tsghti/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_2962c.dir/CheckIncludeFile.c.obj -o cmTC_2962c.exe -Wl,--out-implib,libcmTC_2962c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/src/libFLAC/CMakeLists.txt:4 (check_include_file)"
+    checks:
+      - "Looking for sys/param.h"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-x1rqju"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-x1rqju"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_SYS_PARAM_H"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-x1rqju'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_12d01
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_12d01.dir/CheckIncludeFile.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-x1rqju/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_12d01.dir/CheckIncludeFile.c.obj -o cmTC_12d01.exe -Wl,--out-implib,libcmTC_12d01.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/src/libFLAC/CMakeLists.txt:7 (check_function_exists)"
+    checks:
+      - "Looking for lround"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-kyus51"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-kyus51"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LROUND"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-kyus51'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_b85ad
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage -DCHECK_FUNCTION_EXISTS=lround -fdiagnostics-color=always -o CMakeFiles/cmTC_b85ad.dir/CheckFunctionExists.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-kyus51/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function 'lround'; expected 'long int(double)' [-Wbuiltin-declaration-mismatch]
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-kyus51/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-kyus51/CheckFunctionExists.c:1:1: note: 'lround' is declared in header '<math.h>'
+          +++ |+#include <math.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage -DCHECK_FUNCTION_EXISTS=lround  CMakeFiles/cmTC_b85ad.dir/CheckFunctionExists.c.obj -o cmTC_b85ad.exe -Wl,--out-implib,libcmTC_b85ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-build-debug-coverage/_deps/flac-src/cmake/CheckCPUArch.cmake:6 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/cmake/CheckCPUArch.cmake:18 (_CHECK_CPU_ARCH)"
+      - "cmake-build-debug-coverage/_deps/flac-src/src/libFLAC/CMakeLists.txt:13 (check_cpu_arch_x64)"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-build/CMakeFiles/CMakeTmp"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_FLAC__CPU_X86_64"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_e5594
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always -o CMakeFiles/cmTC_e5594.dir/CheckCPUArch.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-build/CMakeFiles/CMakeTmp/CheckCPUArch.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_e5594.dir/CheckCPUArch.c.obj -o cmTC_e5594.exe -Wl,--out-implib,libcmTC_e5594.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake-build-debug-coverage/_deps/flac-src/src/libFLAC/CMakeLists.txt:101 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_ASSOC_MATH"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zqnv6b"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zqnv6b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_ASSOC_MATH"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zqnv6b'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_2ffeb
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -DHAVE_ASSOC_MATH  -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  -fdiagnostics-color=always   -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -o CMakeFiles/cmTC_2ffeb.dir/src.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-zqnv6b/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage  CMakeFiles/cmTC_2ffeb.dir/src.c.obj -o cmTC_2ffeb.exe -Wl,--out-implib,libcmTC_2ffeb.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/flac-src/microbench/CMakeLists.txt:6 (check_function_exists)"
+    checks:
+      - "Looking for clock_gettime"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-fol1am"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-fol1am"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/flac-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_CLOCK_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-fol1am'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_c8238
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage -DCHECK_FUNCTION_EXISTS=clock_gettime -fdiagnostics-color=always -o CMakeFiles/cmTC_c8238.dir/CheckFunctionExists.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-fol1am/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage -DCHECK_FUNCTION_EXISTS=clock_gettime  CMakeFiles/cmTC_c8238.dir/CheckFunctionExists.c.obj -o cmTC_c8238.exe -Wl,--out-implib,libcmTC_c8238.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_c8238.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline --coverage -DCHECK_FUNCTION_EXISTS=clock_gettime  CMakeFiles/cmTC_c8238.dir/CheckFunctionExists.c.obj -o cmTC_c8238.exe -Wl,--out-implib,libcmTC_c8238.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin/ld.exe: cannot find -lrt: No such file or directory\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "cmake-build-debug-coverage/_deps/vorbis-src/CMakeLists.txt:62 (check_library_exists)"
+    checks:
+      - "Looking for floor in m"
+    directories:
+      source: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tv1p4o"
+      binary: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tv1p4o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--coverage"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/vorbis-src/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tv1p4o'
+        
+        Run Build Command(s): C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_817bb
+        [1/2] C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe   --coverage -DCHECK_FUNCTION_EXISTS=floor -fdiagnostics-color=always -o CMakeFiles/cmTC_817bb.dir/CheckFunctionExists.c.obj -c D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tv1p4o/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function 'floor'; expected 'double(double)' [-Wbuiltin-declaration-mismatch]
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tv1p4o/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/CMakeFiles/CMakeScratch/TryCompile-tv1p4o/CheckFunctionExists.c:1:1: note: 'floor' is declared in header '<math.h>'
+          +++ |+#include <math.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\minow\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe --coverage -DCHECK_FUNCTION_EXISTS=floor  CMakeFiles/cmTC_817bb.dir/CheckFunctionExists.c.obj -o cmTC_817bb.exe -Wl,--out-implib,libcmTC_817bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

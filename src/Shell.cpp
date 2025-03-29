@@ -7,6 +7,7 @@ void Shell::sortImpl(T *arr, int size){
     if (size <= 1) return;
     for (int gap = size / 2; gap > 0; gap /= 2){
         for (int i = gap; i < size; i++){
+            delayFunction();
             T temp = arr[i];
             int j = i;
             while (j >= gap && arr[j - gap] > temp){

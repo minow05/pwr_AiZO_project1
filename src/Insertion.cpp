@@ -8,6 +8,7 @@ template<typename T>
 void Insertion::sortImpl(T *arr, int size) {
     if (size <= 1) return;
     for (int counter = 1; counter < size; counter++) {
+        delayFunction();
         int temp = arr[counter];
         int i = counter - 1;
         while (i >= 0 && arr[i] > temp) {
@@ -16,6 +17,7 @@ void Insertion::sortImpl(T *arr, int size) {
         }
         arr[i + 1] = temp;
     }
+
 }
 
 template void Insertion::sortImpl(float *arr, int size);

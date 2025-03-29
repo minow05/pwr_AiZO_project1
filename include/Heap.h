@@ -16,6 +16,7 @@ private:
     template<typename T>
     void buildMaxHeap(T *arr, int size);
 public:
+    using SortingAlgorithm<Heap>::SortingAlgorithm;
     template<typename T>
     void sortImpl(T *arr, int size);
 

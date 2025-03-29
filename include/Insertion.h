@@ -9,6 +9,7 @@
 
 class Insertion : public SortingAlgorithm<Insertion> {
 public:
+    using SortingAlgorithm<Insertion>::SortingAlgorithm;
     template<typename T>
     void sortImpl(T *arr, int size);
 };

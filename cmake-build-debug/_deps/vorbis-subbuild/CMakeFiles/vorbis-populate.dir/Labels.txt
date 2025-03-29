@@ -1,0 +1,14 @@
+# Target labels
+ vorbis-populate
+# Source files and their labels
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate-complete.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-download.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-mkdir.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test.rule
+D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update.rule

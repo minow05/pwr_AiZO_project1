@@ -38,8 +38,9 @@ void Heap::sortImpl(T *arr, int size) {
     buildMaxHeap(arr, size);  // convert the array into a max heap
 
     for (int i = size - 1; i > 0; i--) {
+        delayFunction();
         std::swap(arr[0], arr[i]);  // move the largest element to the end
-        heapify(arr, i, 0);         // re-heapify the reduced heap
+        heapify(arr, i, 0);
     }
 }
 

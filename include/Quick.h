@@ -16,6 +16,7 @@ private:
     template<typename T>
     void quicksort(T *arr, int lowerBoundary, int upperBoundary);
 public:
+    using SortingAlgorithm<Quick>::SortingAlgorithm;
     void setPivotMode(int mode, int lowerBoundary, int upperBoundary);
     template<typename T>
     void sortImpl(T *arr, int size);
