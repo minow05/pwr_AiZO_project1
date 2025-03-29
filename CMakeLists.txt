@@ -30,7 +30,7 @@ add_executable(pwr_AiZO_project1
         src/Insertion.cpp
         src/Heap.cpp
         src/UserInterface.cpp
-        include/SortingAlgorithm.h
+        include/Algorithms/SortingAlgorithm.h
 )
 
 # Set include directories

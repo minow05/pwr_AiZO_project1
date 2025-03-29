@@ -1,7 +1,7 @@
 //
 // Created by minow on 13-Mar-25.
 //
-#include "../include/Shell.h"
+#include "Algorithms/Shell.h"
 template<typename T>
 void Shell::sortImpl(T *arr, int size){
     if (size <= 1) return;

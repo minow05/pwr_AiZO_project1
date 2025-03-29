@@ -1,10 +1,31 @@
-#include "../include/UserInterface.h"
-#include <SFML/Graphics.hpp>
-#include <iostream>
+#include "UI/UserInterface.h"
 
 UserInterface::UserInterface() {
-    if (!this->font.openFromFile("../fonts/arial.ttf")) {
-        std::cout << "Error loading font" << std::endl;
+    if(!font.openFromFile("../fonts/JetBrainsMono-Regular.ttf")){
+        std::cout << "Error loading font\n";
     }
-    this -> window = sf::Window(sf::VideoMode({WINDOW_SIZE, WINDOW_SIZE}), "Sorting Algorithms");
+    checkbox = Checkbox(sf::Vector2f(200, 200));
+
+    window = sf::RenderWindow(sf::VideoMode({WINDOW_SIZE, WINDOW_SIZE}), "Menu");
+    window.clear(sf::Color::Black);
+    run();
+}
+
+void UserInterface::run(){
+    while(window.isOpen()) {
+        window.handleEvents(
+
+                [this](const sf::Event::Closed&) {
+                    window.close();
+                },
+
+                [this](const sf::Event::MouseButtonPressed& mouseEvent) {
+                    if (mouseEvent.button == sf::Mouse::Button::Left) {
+                        checkbox.handleEvent(mouseEvent);
+                    }
+                }
+
+
+        );
+    }
 }

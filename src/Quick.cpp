@@ -2,7 +2,7 @@
 // Created by minow on 13-Mar-25.
 //
 #include <array>
-#include "../include/Quick.h"
+#include "Algorithms/Quick.h"
 
 void Quick::setPivotMode(int mode, int lowerBoundary, int upperBoundary) {
     int size = upperBoundary - lowerBoundary + 1;

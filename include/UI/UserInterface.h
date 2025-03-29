@@ -1,20 +1,24 @@
-
-
 #ifndef PWR_AIZO_PROJECT1_USERINTERFACE_H
 #define PWR_AIZO_PROJECT1_USERINTERFACE_H
 
 #include <SFML/Graphics.hpp>
+#include <vector>
+#include <string>
+#include "Checkbox.h"
+#include <iostream>
 
 #define WINDOW_SIZE 800
 
 class UserInterface {
 public:
-    UserInterface();
-private:
-    sf::Window window;
+    explicit UserInterface();
 
+private:
     sf::Font font;
-    std::array<std::string, 4> algorithms;
+
+    Checkbox checkbox = Checkbox();
+    sf::RenderWindow window;
+    void run();
 };
 
 #endif //PWR_AIZO_PROJECT1_USERINTERFACE_H

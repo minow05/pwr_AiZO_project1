@@ -1,11 +1,11 @@
 //
 // Created by minow on 13-Mar-25.
 //
-#include "../include/Quick.h"
-#include "../include/Shell.h"
-#include "../include/Insertion.h"
-#include "../include/Heap.h"
-#include "UserInterface.h"
+#include "Algorithms/Quick.h"
+#include "Algorithms/Shell.h"
+#include "Algorithms/Insertion.h"
+#include "Algorithms/Heap.h"
+#include "UI/UserInterface.h"
 #include <iostream>
 
 #define SIZE 1000 // 200
@@ -19,7 +19,7 @@ int main() {
 //    Insertion shell = Insertion(false);
 //    shell.setMode(true);
 //    shell.sort(hugeArray.get(), SIZE);
-UserInterface userInterface;
+UserInterface ui;
 //    shell.printTime();
 //    shell.printArray(arr, 6);
 //    Insertion insertion;

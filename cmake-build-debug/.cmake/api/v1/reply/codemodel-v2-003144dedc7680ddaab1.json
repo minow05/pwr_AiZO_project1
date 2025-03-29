@@ -563,7 +563,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "pwr_AiZO_project1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pwr_AiZO_project1-Debug-8af58a94ccf7573ef2fa.json",
+					"jsonFile" : "target-pwr_AiZO_project1-Debug-5c5a81e75dfbf5956aa3.json",
 					"name" : "pwr_AiZO_project1",
 					"projectIndex" : 0
 				},
@@ -612,7 +612,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tests-Debug-b0bac1fc376e3f4b474a.json",
+					"jsonFile" : "target-tests-Debug-80faa8dd1223708eb402.json",
 					"name" : "tests",
 					"projectIndex" : 0
 				},

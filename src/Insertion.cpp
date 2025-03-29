@@ -2,7 +2,7 @@
 // Created by minow on 13-Mar-25.
 //
 
-#include "../include/Insertion.h"
+#include "Algorithms/Insertion.h"
 
 template<typename T>
 void Insertion::sortImpl(T *arr, int size) {

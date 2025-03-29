@@ -275,7 +275,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "include/SortingAlgorithm.h",
+			"path" : "include/Algorithms/SortingAlgorithm.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -1,31 +1,23 @@
 C:\Users\minow\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/minow/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_CXX_FLAGS=-fmodules-ts -G Ninja -S D:\GitHub_Repos\pwr_AiZO_project1 -B D:\GitHub_Repos\pwr_AiZO_project1\cmake-build-debug
-CMake Deprecation Warning at cmake-build-debug/_deps/freetype-src/CMakeLists.txt:113 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
-CMake Deprecation Warning at cmake-build-debug/_deps/ogg-src/CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
+CMake Error at C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake:759 (message):
+  git version 1.6.5 or later required for --recursive flag with 'git
+  submodule ...': GIT_VERSION_STRING=''
+Call Stack (most recent call first):
+  C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake:955 (_ep_get_git_submodules_recurse)
+  C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject.cmake:3035 (_ep_add_download_command)
+  CMakeLists.txt:29 (ExternalProject_Add)
 
 
--- Configuring libogg 1.3.5
-CMake Deprecation Warning at cmake-build-debug/_deps/vorbis-src/CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
+-- Configuring incomplete, errors occurred!
 
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
+CMake Error at C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:1906 (message):
+  CMake step for sfml failed: 1
+Call Stack (most recent call first):
+  C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:1609 (__FetchContent_populateSubbuild)
+  C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+  C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:2145 (cmake_language)
+  C:/Users/minow/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:2384 (__FetchContent_Populate)
+  CMakeLists.txt:23 (FetchContent_MakeAvailable)
 
 
--- Configuring vorbis 1.3.7
--- Configuring done (7.7s)
--- Generating done (0.3s)
--- Build files have been written to: D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug
+-- Configuring incomplete, errors occurred!

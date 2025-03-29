@@ -3,11 +3,11 @@
 //
 #include <gtest/gtest.h>
 #include <shldisp.h>
-#include "../include/Heap.h"
-#include "../include/Quick.h"
-#include "../include/Insertion.h"
-#include "../include/Shell.h"
-#include "../include/SortingAlgorithm.h"
+#include "Algorithms/Heap.h"
+#include "Algorithms/Quick.h"
+#include "Algorithms/Insertion.h"
+#include "Algorithms/Shell.h"
+#include "Algorithms/SortingAlgorithm.h"
 
 TEST(HeapSortTest, TestSizeOneArray) {
     int arr[] = {1};
