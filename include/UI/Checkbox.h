@@ -10,13 +10,13 @@ public:
     Checkbox();
     explicit Checkbox(sf::Vector2f position);
 
-    void handleEvent(sf::Event event);
+    void handleEvent(sf::RenderWindow& window);
     void render(sf::RenderWindow& window);
-    bool isChecked();
+    bool checked;
 private:
     sf::RectangleShape box;
     sf::RectangleShape checkMark;
-    bool checked;
+
 };
 
 #endif //PWR_AIZO_PROJECT1_CHECKBOX_H

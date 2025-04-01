@@ -1,4 +1,4 @@
-prefix=C:/Program Files (x86)/Project
+prefix=C:/Program Files (x86)/pwr_AiZO_project1
 exec_prefix=${prefix}
 libdir=${prefix}/lib
 includedir=${prefix}/include

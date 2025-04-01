@@ -31,6 +31,9 @@ add_executable(pwr_AiZO_project1
         src/Heap.cpp
         src/UserInterface.cpp
         include/Algorithms/SortingAlgorithm.h
+        src/Checkbox.cpp
+        src/SlideBar.cpp
+        src/CheckboxGroup.cpp
 )
 
 # Set include directories
@@ -60,3 +63,5 @@ target_link_libraries(tests PRIVATE GTest::gtest_main SFML::Graphics)
 # Include GoogleTest functionality
 include(GoogleTest)
 gtest_discover_tests(tests)
+# Ensure the fonts folder is copied to the build directory
+#file(COPY ${CMAKE_SOURCE_DIR}/fonts DESTINATION ${CMAKE_BINARY_DIR})

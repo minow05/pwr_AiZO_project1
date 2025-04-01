@@ -1,5 +1,5 @@
-libdir=C:/Program Files (x86)/Project/lib
-includedir=C:/Program Files (x86)/Project/include
+libdir=C:/Program Files (x86)/pwr_AiZO_project1/lib
+includedir=C:/Program Files (x86)/pwr_AiZO_project1/include
 
 Name: gmock
 Description: GoogleMock (without main() function)

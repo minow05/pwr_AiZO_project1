@@ -1,9 +1,9 @@
 # libvorbis pkg-config source file
 
-prefix=C:/Program Files (x86)/Project
-exec_prefix=C:/Program Files (x86)/Project/bin
-libdir=C:/Program Files (x86)/Project/lib
-includedir=C:/Program Files (x86)/Project/include
+prefix=C:/Program Files (x86)/pwr_AiZO_project1
+exec_prefix=C:/Program Files (x86)/pwr_AiZO_project1/bin
+libdir=C:/Program Files (x86)/pwr_AiZO_project1/lib
+includedir=C:/Program Files (x86)/pwr_AiZO_project1/include
 
 Name: vorbis
 Description: vorbis is the primary Ogg Vorbis library

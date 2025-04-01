@@ -6,17 +6,24 @@
 #include <string>
 #include "Checkbox.h"
 #include <iostream>
+#include "SlideBar.h"
+#include "CheckboxGroup.h"
+
 
 #define WINDOW_SIZE 800
+
 
 class UserInterface {
 public:
     explicit UserInterface();
-
+    Checkbox checkbox;
+    SlideBar sizeBar;
+    CheckboxGroup checkboxGroup;
 private:
     sf::Font font;
-
-    Checkbox checkbox = Checkbox();
+    sf::Text checkBoxLabel = sf::Text(font, "Slow Mode", 12);
+    sf::Text sizeBarLabel = sf::Text(font, "Size", 12);
+    sf::Text sizeBarValue = sf::Text(font, "0", 12);
     sf::RenderWindow window;
     void run();
 };

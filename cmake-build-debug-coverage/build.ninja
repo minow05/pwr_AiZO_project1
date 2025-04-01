@@ -97,6 +97,30 @@ build CMakeFiles/pwr_AiZO_project1.dir/src/UserInterface.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles\pwr_AiZO_project1.dir
   OBJECT_FILE_DIR = CMakeFiles\pwr_AiZO_project1.dir\src
 
+build CMakeFiles/pwr_AiZO_project1.dir/src/Checkbox.cpp.obj: CXX_COMPILER__pwr_AiZO_project1_unscanned_Debug D$:/GitHub_Repos/pwr_AiZO_project1/src/Checkbox.cpp || cmake_object_order_depends_target_pwr_AiZO_project1
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\pwr_AiZO_project1.dir\src\Checkbox.cpp.obj.d
+  FLAGS = --coverage -fmodules-ts -g -fdiagnostics-color=always
+  INCLUDES = -ID:/GitHub_Repos/pwr_AiZO_project1/include -isystem D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/include
+  OBJECT_DIR = CMakeFiles\pwr_AiZO_project1.dir
+  OBJECT_FILE_DIR = CMakeFiles\pwr_AiZO_project1.dir\src
+
+build CMakeFiles/pwr_AiZO_project1.dir/src/SlideBar.cpp.obj: CXX_COMPILER__pwr_AiZO_project1_unscanned_Debug D$:/GitHub_Repos/pwr_AiZO_project1/src/SlideBar.cpp || cmake_object_order_depends_target_pwr_AiZO_project1
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\pwr_AiZO_project1.dir\src\SlideBar.cpp.obj.d
+  FLAGS = --coverage -fmodules-ts -g -fdiagnostics-color=always
+  INCLUDES = -ID:/GitHub_Repos/pwr_AiZO_project1/include -isystem D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/include
+  OBJECT_DIR = CMakeFiles\pwr_AiZO_project1.dir
+  OBJECT_FILE_DIR = CMakeFiles\pwr_AiZO_project1.dir\src
+
+build CMakeFiles/pwr_AiZO_project1.dir/src/CheckboxGroup.cpp.obj: CXX_COMPILER__pwr_AiZO_project1_unscanned_Debug D$:/GitHub_Repos/pwr_AiZO_project1/src/CheckboxGroup.cpp || cmake_object_order_depends_target_pwr_AiZO_project1
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\pwr_AiZO_project1.dir\src\CheckboxGroup.cpp.obj.d
+  FLAGS = --coverage -fmodules-ts -g -fdiagnostics-color=always
+  INCLUDES = -ID:/GitHub_Repos/pwr_AiZO_project1/include -isystem D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug-coverage/_deps/sfml-src/include
+  OBJECT_DIR = CMakeFiles\pwr_AiZO_project1.dir
+  OBJECT_FILE_DIR = CMakeFiles\pwr_AiZO_project1.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target pwr_AiZO_project1
@@ -105,7 +129,7 @@ build CMakeFiles/pwr_AiZO_project1.dir/src/UserInterface.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable bin\pwr_AiZO_project1.exe
 
-build bin/pwr_AiZO_project1.exe: CXX_EXECUTABLE_LINKER__pwr_AiZO_project1_Debug CMakeFiles/pwr_AiZO_project1.dir/src/main.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Shell.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Quick.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Insertion.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Heap.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/UserInterface.cpp.obj | _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libfreetyped.a || _deps/sfml-build/lib/libfreetyped.a _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a
+build bin/pwr_AiZO_project1.exe: CXX_EXECUTABLE_LINKER__pwr_AiZO_project1_Debug CMakeFiles/pwr_AiZO_project1.dir/src/main.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Shell.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Quick.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Insertion.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Heap.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/UserInterface.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/Checkbox.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/SlideBar.cpp.obj CMakeFiles/pwr_AiZO_project1.dir/src/CheckboxGroup.cpp.obj | _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libfreetyped.a || _deps/sfml-build/lib/libfreetyped.a _deps/sfml-build/lib/libsfml-graphics-s-d.a _deps/sfml-build/lib/libsfml-system-s-d.a _deps/sfml-build/lib/libsfml-window-s-d.a
   FLAGS = --coverage -fmodules-ts -g
   LINK_LIBRARIES = _deps/sfml-build/lib/libsfml-graphics-s-d.a  _deps/sfml-build/lib/libsfml-window-s-d.a  _deps/sfml-build/lib/libsfml-system-s-d.a  -lopengl32  -lwinmm  -lgdi32  _deps/sfml-build/lib/libfreetyped.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\pwr_AiZO_project1.dir

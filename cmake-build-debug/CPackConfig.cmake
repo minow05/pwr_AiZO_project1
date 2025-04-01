@@ -27,7 +27,7 @@ set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_SUMMARY "pwr_AiZO_project1 built using CMa
 set(CPACK_GENERATOR "NSIS")
 set(CPACK_INNOSETUP_ARCHITECTURE "x64")
 set(CPACK_INSTALL_CMAKE_PROJECTS "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug;pwr_AiZO_project1;ALL;/")
-set(CPACK_INSTALL_PREFIX "C:/Program Files (x86)/Project")
+set(CPACK_INSTALL_PREFIX "C:/Program Files (x86)/pwr_AiZO_project1")
 set(CPACK_MODULE_PATH "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/sfml-src/cmake/Modules/;D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/ogg-src/cmake")
 set(CPACK_NSIS_DISPLAY_NAME "pwr_AiZO_project1 1.3.5")
 set(CPACK_NSIS_INSTALLER_ICON_CODE "")

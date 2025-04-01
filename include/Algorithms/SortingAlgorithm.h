@@ -9,6 +9,7 @@
 #include <thread>
 #include <atomic>
 #include <functional>
+#include "ISortingAlgorithm.h"
 
 #ifndef PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
 #define PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
@@ -16,12 +17,13 @@
 #define WINDOW_SIZE_FLOAT 800.0
 
 template<class Derived>
-class SortingAlgorithm {
+class SortingAlgorithm : public ISortingAlgorithm {
 public:
 
     explicit SortingAlgorithm(bool slow){
         setMode(slow);
         this -> slowMode = slow;
+        this->name = typeid(Derived).name();
     }
     virtual ~SortingAlgorithm() = default;
 
@@ -58,15 +60,10 @@ public:
     void drawPlot(T *arr, int size){
         sf::RenderWindow window{sf::VideoMode({WINDOW_SIZE, WINDOW_SIZE}), "Sorting Algorithm"};
         T max = *std::max_element(arr, arr + size);
-        float max_float = static_cast<float>(max);
-        float size_float = static_cast<float>(size);
+        auto max_float = static_cast<float>(max);
+        auto size_float = static_cast<float>(size);
         while (window.isOpen()) {
-            while (const std::optional event = window.pollEvent()) {
-                if (event->is<sf::Event::Closed>()) {
-                    window.close();
-                }
-            }
-            window.clear(sf::Color::Black);
+
             updatePlot(arr, size, size_float, window, max_float);
             window.display();
             std::this_thread::sleep_for(std::chrono::milliseconds(16));
@@ -91,7 +88,11 @@ public:
         std::cout << "Time: " << static_cast<float>(duration.count())/static_cast<float>(size) << " milliseconds" << std::endl;
     }
 
+    [[nodiscard]] std::string getName() const {
+        return name.substr(1, name.size() - 1);
+    }
 protected:
+    std::string name = "SortingAlgorithm";
     std::chrono::microseconds duration{};
     bool slowMode;
     std::thread renderThread;
