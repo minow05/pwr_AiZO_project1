@@ -33,7 +33,7 @@ public:
     }
 
     template<typename T>
-    void sort(T *arr, int size) {
+     void sort(T *arr, int size) {
         if (slowMode){
             renderThread = std::thread(&SortingAlgorithm::drawPlot<T>, this, arr, size);
         }

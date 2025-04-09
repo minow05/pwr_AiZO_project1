@@ -56,81 +56,49 @@ int getTypeOfDataChoice(){
 }
 
 int main() {
-    std::cout << "Welcome to the sorting visualizer!\n";
-    bool chosen = false;
-    while(!chosen) {
-        switch (getAlgorithmChoice()) {
-            case 1: {
-                Quick quick = Quick(false);
-                chosen = true;
-                break;
-            }
-            case 2: {
-                Shell shell = Shell(false);
-                chosen = true;
-                break;
-            }
-            case 3: {
-                Insertion insertion = Insertion(false);
-                chosen = true;
-                break;
-            }
-            case 4: {
-                Heap heap = Heap(false);
-                std::cout << "Invalid choice, try again.\n";
-                chosen = true;
-                break;
-            } default: {
-                std::cout << "Invalid choice, try again.\n";
-            }
-        }
-    }
-    bool dataChosen = false;
-    std::variant<DataGeneration<int>, DataGeneration<float>> dataGenerator;
-    while (!dataChosen){
-        switch (getTypeOfDataChoice()) {
-            case 1: {
-                DataGeneration<int> intDataGenerator;
-                dataGenerator.emplace<DataGeneration<int>>(intDataGenerator);
-                dataChosen = true;
-                break;
-            }
-            case 2: {
-                DataGeneration<float> floatDataGenerator;
-                dataGenerator.emplace<DataGeneration<float>>(floatDataGenerator);
-                dataChosen = true;
-                break;
-            }
-            default: {
-                std::cout << "Invalid choice, try again.\n";
-            }
-        }
-    }
-    int size = getSizeOfArrayChoice();
-    bool arrayChosen = false;
-    while (!arrayChosen){
-        switch (getTypeOfArrayChoice()) {
-            case 1:
-                std::visit([size](auto&& gen) {
-                    auto data = gen.generateRandom(size);
-                }, dataGenerator);
-                arrayChosen = true;
-                break;
-            case 2:
-                std::visit([size](auto& gen) {
-                    auto arr = gen.generateSorted(size);
-                }, dataGenerator);
-                arrayChosen = true;
-                break;
-            case 3:
-                std::visit([size](auto& gen) {
-                    auto arr = gen.generateReverseSorted(size);
-                }, dataGenerator);
-                arrayChosen = true;
-                break;
-            default:
-                std::cout << "Invalid choice, try again.\n";
-        }
-    }
+    DataGeneration<int> dataGeneration(1000);
+    std::cout << "breakpoint 1\n";
+    Insertion insertion = Insertion(false);
+    std::cout << "breakpoint 2\n";
+    int *arr = dataGeneration.getArray("random");
+    std::cout << "breakpoint 3\n";
+    insertion.sort(arr, 1000);
+    std::cout << "breakpoint 4\n";
+    insertion.printArray(arr, 1000);
+    std::cout << "breakpoint 5\n";
+    insertion.printTime(1000);
+    std::cout << "breakpoint 6\n";
+    dataGeneration.saveArray(arr, "random");
+    std::cout << "breakpoint 7\n";
+//    UserInterface ui;
+//    std::cout << "Welcome to the sorting visualizer!\n";
+//    bool chosen = false;
+//    while(!chosen) {
+//        switch (getAlgorithmChoice()) {
+//            case 1: {
+//                Quick quick = Quick(false);
+//                chosen = true;
+//                break;
+//            }
+//            case 2: {
+//                Shell shell = Shell(false);
+//                chosen = true;
+//                break;
+//            }
+//            case 3: {
+//                Insertion insertion = Insertion(false);
+//                chosen = true;
+//                break;
+//            }
+//            case 4: {
+//                Heap heap = Heap(false);
+//                std::cout << "Invalid choice, try again.\n";
+//                chosen = true;
+//                break;
+//            } default: {
+//                std::cout << "Invalid choice, try again.\n";
+//            }
+//        }
+//    }
     return 0;
 }
