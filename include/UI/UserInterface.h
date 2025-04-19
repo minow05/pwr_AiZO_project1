@@ -8,6 +8,8 @@
 #include <iostream>
 #include "SlideBar.h"
 #include "CheckboxGroup.h"
+#include "Dropdown.h"
+#include "Button.h"
 
 
 #define WINDOW_SIZE 800
@@ -18,7 +20,10 @@ public:
     explicit UserInterface();
     Checkbox checkbox;
     SlideBar sizeBar;
-    CheckboxGroup checkboxGroup;
+    Dropdown algorithmsDropdown;
+    Dropdown datatypeDropdown;
+    Dropdown dataFormatDropdown;
+    Button runButton;
 private:
     sf::Font font;
     sf::Text checkBoxLabel = sf::Text(font, "Slow Mode", 12);

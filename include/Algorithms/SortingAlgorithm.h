@@ -10,20 +10,20 @@
 #include <atomic>
 #include <functional>
 #include "ISortingAlgorithm.h"
+#include <bit>
 
 #ifndef PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
 #define PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
 #define WINDOW_SIZE 800
-#define WINDOW_SIZE_FLOAT 800.0
+#define WINDOW_SIZE_FLOAT 800.f
 
 template<class Derived>
-class SortingAlgorithm : public ISortingAlgorithm {
+class SortingAlgorithm {
 public:
 
     explicit SortingAlgorithm(bool slow){
         setMode(slow);
-        this -> slowMode = slow;
-        this->name = typeid(Derived).name();
+        sortingFinished = false;
     }
     virtual ~SortingAlgorithm() = default;
 
@@ -34,6 +34,7 @@ public:
 
     template<typename T>
      void sort(T *arr, int size) {
+        sortingFinished = false;
         if (slowMode){
             renderThread = std::thread(&SortingAlgorithm::drawPlot<T>, this, arr, size);
         }
@@ -42,8 +43,8 @@ public:
         auto stop = std::chrono::high_resolution_clock::now();
         this -> duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
         this -> printTime(size);
-        if (renderThread.joinable()) renderThread.detach();
-
+        sortingFinished = true;
+        if (renderThread.joinable()) renderThread.join();
     }
     //Curiously recurring template pattern (CRTP) because we want to inherit virtual template method
 
@@ -60,47 +61,45 @@ public:
     void drawPlot(T *arr, int size){
         sf::RenderWindow window{sf::VideoMode({WINDOW_SIZE, WINDOW_SIZE}), "Sorting Algorithm"};
         T max = *std::max_element(arr, arr + size);
-        auto max_float = static_cast<float>(max);
-        auto size_float = static_cast<float>(size);
         while (window.isOpen()) {
-
-            updatePlot(arr, size, size_float, window, max_float);
+            if (sortingFinished) window.close();
+            updatePlot(arr, size, window, max);
             window.display();
             std::this_thread::sleep_for(std::chrono::milliseconds(16));
         }
+
     }
 
 
     template<typename T>
-    void updatePlot (T *arr, int size, float size_float, sf::RenderWindow &window, float &max){
+    void updatePlot (T *arr, int size, sf::RenderWindow &window, T max){
+        window.clear(sf::Color::Black);
+        float barWidth = static_cast<float>(WINDOW_SIZE) / static_cast<float>(size);
 
-        for (int i = 0; i < size; i++){
-            float height = static_cast<float>(arr[i]) / max * WINDOW_SIZE_FLOAT;
-            float width = WINDOW_SIZE_FLOAT/size_float; //floor z size'a
-            sf::RectangleShape rectangle(sf::Vector2f(width, height));
-            rectangle.setPosition(sf::Vector2f(static_cast<float>(i) * width, WINDOW_SIZE_FLOAT - height));
+//        std::this_thread::sleep_for(std::chrono::milliseconds(1));
+
+        for (int i = 0; i < size; i++) {
+
+            float barHeight = static_cast<float>(arr[i]) / static_cast<float>(max) * WINDOW_SIZE_FLOAT;
+
+            sf::RectangleShape rectangle(sf::Vector2f(barWidth, barHeight));
+            rectangle.setPosition(sf::Vector2f(static_cast<float>(i) * barWidth, WINDOW_SIZE_FLOAT - barHeight));  // Align bottom
             rectangle.setFillColor(sf::Color(2, 48, 32));
             window.draw(rectangle);
         }
     }
 
-    void printTime(int size){
-        std::cout << "Time: " << static_cast<float>(duration.count())/static_cast<float>(size) << " milliseconds" << std::endl;
+    void printTime(float sizeFloat){
+        std::cout << "Time: " << static_cast<float>(duration.count())/sizeFloat << " milliseconds\n";
     }
 
-    [[nodiscard]] std::string getName() const {
-        return name.substr(1, name.size() - 1);
-    }
 protected:
-    std::string name = "SortingAlgorithm";
+    bool sortingFinished;
     std::chrono::microseconds duration{};
     bool slowMode;
     std::thread renderThread;
     template<typename T>
-    void sortImpl(T *arr, int size){
-        if (size <= 1) return;
-        std::sort(arr, arr + size);
-    };
+    void sortImpl(T *arr, int size);
     std::function<void()> delayFunction;
     void delayReal() const {
         std::this_thread::sleep_for(std::chrono::milliseconds(1));

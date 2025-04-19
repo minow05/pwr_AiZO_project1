@@ -20,10 +20,12 @@ template<typename T>
 int Quick::partition(T *arr, int lowerBoundary, int upperBoundary) {
     setPivotMode(pivotMode, lowerBoundary, upperBoundary);
     T pivotValue = arr[pivot];
+
     std::swap(arr[pivot], arr[upperBoundary]);  // Move pivot to end
 
     int storeIndex = lowerBoundary;
-    for (int i = lowerBoundary; i < upperBoundary; i++) {
+    for (int i = lowerBoundary; i < upperBoundary; i++)
+    {
         if (arr[i] < pivotValue) {
             delayFunction();
             std::swap(arr[i], arr[storeIndex]);

@@ -34,6 +34,9 @@ add_executable(pwr_AiZO_project1
         src/Checkbox.cpp
         src/SlideBar.cpp
         src/CheckboxGroup.cpp
+        src/Dropdown.cpp
+        include/UI/Button.h
+        src/Button.cpp
 )
 
 # Set include directories

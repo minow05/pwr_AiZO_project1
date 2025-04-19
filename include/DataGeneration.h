@@ -7,25 +7,26 @@
 #include "Algorithms/Insertion.h"
 #include "Algorithms/Quick.h"
 #include "Algorithms/Shell.h"
+#include <random>
 
 template<typename T>
 class DataGeneration {
 public:
 
     DataGeneration(int size) : size(size){
-        generateRandom();
-        generateSorted();
-        generateReverseSorted();
+        arrRandom = generateRandom();
+        arrSorted = generateSorted();
+        arrReverseSorted = generateReverseSorted();
     };
 
     ~DataGeneration(){
-//        delete[] readFromFile("random");
-//        delete[] readFromFile("sorted");
-//        delete[] readFromFile("reverseSorted");
+        delete[] arrRandom;
+        delete[] arrSorted;
+        delete[] arrReverseSorted;
     };
 
     T* getArray(const std::string name){
-        readFromFile(name);
+        return readFromFile(name);
     }
 
     void saveArray(T* arr, std::string name){
@@ -35,18 +36,25 @@ public:
 private:
 
     int size = 0;
+    T* arrRandom = nullptr;
+    T* arrSorted = nullptr;
+    T* arrReverseSorted = nullptr;
 
-    T* generateRandom() {
-        T* arr = new T[size];
+    T *generateRandom() {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<> dis(0, size - 1);
+
+        T *arr = new T[size];
         for (int i = 0; i < size; ++i) {
-            arr[i] = rand() % size;
+            arr[i] = static_cast<T>(dis(gen));
         }
         writeToFile(arr, "random");
         return arr;
     }
 
-    T* generateSorted() {
-        T* arr = new T[size];
+    T *generateSorted() {
+        T *arr = new T[size];
         for (int i = 0; i < size; ++i) {
             arr[i] = i;
         }
@@ -71,18 +79,13 @@ private:
             return nullptr;
         }
 
-        std::vector<T> tempData;
+        T* arr = new T[size];
+        int index = 0;
         T value;
         while (inFile >> value) {
-            tempData.push_back(value);
+            arr[index] = value;
+            index++;
         }
-
-        size = static_cast<int>(tempData.size());
-        T* arr = new T[size];
-        for (int i = 0; i < size; ++i) {
-            arr[i] = tempData[i];
-        }
-
         return arr;
     }
 
