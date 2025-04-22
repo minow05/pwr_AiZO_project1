@@ -1,0 +1,1 @@
+-isystem "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/vorbis-src/include" -isystem "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/ogg-src/include" -isystem "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/ogg-build/include"

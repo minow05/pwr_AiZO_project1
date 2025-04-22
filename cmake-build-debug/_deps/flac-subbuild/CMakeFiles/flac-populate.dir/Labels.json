@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate-complete.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate-complete.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-build.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-build.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-configure.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-configure.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-download.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-download.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-install.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-install.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-mkdir.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-mkdir.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-patch.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-patch.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-test.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-test.rule"
 		},
 		{
-			"file" : "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-update.rule"
+			"file" : "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-update.rule"
 		}
 	],
 	"target" : 

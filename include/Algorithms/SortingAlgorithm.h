@@ -7,10 +7,7 @@
 #include <chrono>
 #include <SFML/Graphics.hpp>
 #include <thread>
-#include <atomic>
 #include <functional>
-#include "ISortingAlgorithm.h"
-#include <bit>
 
 #ifndef PWR_AIZO_PROJECT1_SORTINGALGORITHM_H
 #define PWR_AIZO_PROJECT1_SORTINGALGORITHM_H

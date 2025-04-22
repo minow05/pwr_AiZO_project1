@@ -5,7 +5,7 @@
 
 
 UserInterface::UserInterface() {
-    if(!font.openFromFile("../fonts/Arial.ttf")){
+    if(!font.openFromFile(R"(C:\GitHub_repos\pwr_AiZO_project1\fonts\Arial.ttf)")){
         std::cout << "Error loading font\n";
     }
     window = sf::RenderWindow(sf::VideoMode({WINDOW_SIZE, WINDOW_SIZE}), "Menu");

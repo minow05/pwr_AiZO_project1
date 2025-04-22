@@ -1,4 +1,4 @@
-# Install script for directory: D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/sfml-src/src/SFML/Main
+# Install script for directory: C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/sfml-src/src/SFML/Main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,16 +34,10 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/minow/AppData/Local/Programs/CLion/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/JetBrains/CLion 2023.2.2/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/sfml-build/lib/libsfml-main-s-d.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/GitHub_repos/pwr_AiZO_project1/cmake-build-debug/_deps/sfml-build/lib/libsfml-main-s-d.a")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/GitHub_Repos/pwr_AiZO_project1/cmake-build-debug/_deps/sfml-build/src/SFML/Main/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()

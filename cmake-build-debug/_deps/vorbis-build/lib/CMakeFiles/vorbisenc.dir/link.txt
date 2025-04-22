@@ -1,0 +1,2 @@
+C:\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc ..\..\sfml-build\lib\libvorbisencd.a CMakeFiles/vorbisenc.dir/vorbisenc.c.obj
+C:\JETBRA~1\CLION2~1.2\bin\mingw\bin\ranlib.exe ..\..\sfml-build\lib\libvorbisencd.a

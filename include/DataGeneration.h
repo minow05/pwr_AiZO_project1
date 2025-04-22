@@ -1,7 +1,7 @@
 #ifndef PWR_AIZO_PROJECT1_DATAGENERATION_H
 #define PWR_AIZO_PROJECT1_DATAGENERATION_H
 
-#include <fstream>
+#include    <fstream>
 #include "Algorithms/SortingAlgorithm.h"
 #include "Algorithms/Heap.h"
 #include "Algorithms/Insertion.h"
@@ -43,7 +43,7 @@ private:
     T *generateRandom() {
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dis(0, size - 1);
+        std::uniform_real_distribution<> dis(0, size - 1);
 
         T *arr = new T[size];
         for (int i = 0; i < size; ++i) {
@@ -54,19 +54,34 @@ private:
     }
 
     T *generateSorted() {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution<> dis(0, size - 1);
+
         T *arr = new T[size];
         for (int i = 0; i < size; ++i) {
-            arr[i] = i;
+            arr[i] = static_cast<T>(dis(gen));
         }
+        std::sort(arr, arr + size);
         writeToFile(arr, "sorted");
         return arr;
     }
 
     T* generateReverseSorted() {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution<> dis(0, size - 1);
+
+        T *temp = new T[size];
+        for (int i = 0; i < size; ++i) {
+            temp[i] = static_cast<T>(dis(gen));
+        }
+        std::sort(temp, temp + size);
         T* arr = new T[size];
         for (int i = 0; i < size; ++i) {
-            arr[i] = size - i;
+            arr[i] = temp[size - i - 1];
         }
+        delete[] temp;
         writeToFile(arr, "reverseSorted");
         return arr;
     }

@@ -6,7 +6,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 include(FetchContent)
 
-# Fetch SFML
 FetchContent_Declare(
         SFML
         GIT_REPOSITORY https://github.com/SFML/SFML.git
@@ -39,16 +38,12 @@ add_executable(pwr_AiZO_project1
         src/Button.cpp
 )
 
-# Set include directories
 target_include_directories(pwr_AiZO_project1 PRIVATE include)
 
-# Link SFML to the main project
 target_link_libraries(pwr_AiZO_project1 PRIVATE SFML::Graphics)
 
-# Enable testing
 enable_testing()
 
-# Create a test executable
 add_executable(tests
         tests/test_sizeOneArray.cpp
         src/Heap.cpp
@@ -57,14 +52,9 @@ add_executable(tests
         src/Insertion.cpp
 )
 
-# Include headers for tests
 target_include_directories(tests PRIVATE include)
 
-# Link test executable with Google Test and SFML (if needed)
 target_link_libraries(tests PRIVATE GTest::gtest_main SFML::Graphics)
 
-# Include GoogleTest functionality
 include(GoogleTest)
 gtest_discover_tests(tests)
-# Ensure the fonts folder is copied to the build directory
-#file(COPY ${CMAKE_SOURCE_DIR}/fonts DESTINATION ${CMAKE_BINARY_DIR})
